@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>註冊頁</title>
+        <script type="text/javascript" language=javascript>
+            function check(){
+                if(form.username.value == ""){
+                    window.alert("此欄不可為空白");
+                }else if(form.password.value == ""){
+                    window.alert("未輸入密碼");
+                }else if(form.password.value != form.password2.value){
+                    window.alert("密碼兩次輸入不同");
+				}else if(form.realname.value == ""){
+                    window.alert("此欄不可為空白");
+				}else if(form.birthdate.value >= "1999.05.22"){
+					window.alert("很抱歉，您未滿18歲，回家喝奶吧！");
+				}else if(form.birthdate.value >= "Today.getFullYear().(Today.getMonth()+1).Today.getDate()"){
+                    window.alert("馬的你根本還沒出生吧~");
+				}else if(form.birthdate.value == ""){
+                    window.alert("此欄不可為空白");
+                }else form.submit();
+            }
+        </script>
+    </head>
+    <body>
+        <h1>註冊頁</h1>
+        <form name='form' action='adddo.php' method="post">
+            真實姓名：<input type='text' name='username'><br />
+            密碼：<input type='password' name='password'><br />
+            確認密碼：<input type='password' name='password2'><br />
+            真實姓名：<input type='text' name='realname'><br />
+            信箱：<input type='text' name='email'><br />
+            生日：<input type='date' name='birthdate'><br />
+            <input type="button" value="傳送" onClick="check()" />
+        </form>
+    </body>
+</html>
