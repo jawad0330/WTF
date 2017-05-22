@@ -2,37 +2,37 @@
 <html>
     <head>
 		<meta charset="UTF-8">
-        <title>µù¥U­¶</title>
+        <title>è¨»å†Šé </title>
         <script type="text/javascript" language=javascript>
             function check(){
                 if(form.username.value == ""){
-                    window.alert("¦¹Äæ¤£¥i¬°ªÅ¥Õ");
+                    window.alert("æ­¤æ¬„ä¸å¯ç‚ºç©ºç™½");
                 }else if(form.password.value == ""){
-                    window.alert("¥¼¿é¤J±K½X");
+                    window.alert("æœªè¼¸å…¥å¯†ç¢¼");
                 }else if(form.password.value != form.password2.value){
-                    window.alert("±K½X¨â¦¸¿é¤J¤£¦P");
+                    window.alert("å¯†ç¢¼å…©æ¬¡è¼¸å…¥ä¸åŒ");
 				}else if(form.realname.value == ""){
-                    window.alert("¦¹Äæ¤£¥i¬°ªÅ¥Õ");
+                    window.alert("æ­¤æ¬„ä¸å¯ç‚ºç©ºç™½");
 				}else if(form.birthdate.value >= "1999.05.22"){
-					window.alert("«Ü©êºp¡A±z¥¼º¡18·³¡A¦^®a³Ü¥¤§a¡I");
+					window.alert("å¾ˆæŠ±æ­‰ï¼Œæ‚¨æœªæ»¿18æ­²ï¼Œå›å®¶å–å¥¶å§ï¼");
 				}else if(form.birthdate.value >= "Today.getFullYear().(Today.getMonth()+1).Today.getDate()"){
-                    window.alert("°¨ªº§A®Ú¥»ÁÙ¨S¥X¥Í§a~");
+                    window.alert("é¦¬çš„ä½ æ ¹æœ¬é‚„æ²’å‡ºç”Ÿå§~");
 				}else if(form.birthdate.value == ""){
-                    window.alert("¦¹Äæ¤£¥i¬°ªÅ¥Õ");
+                    window.alert("æ­¤æ¬„ä¸å¯ç‚ºç©ºç™½");
                 }else form.submit();
             }
         </script>
     </head>
     <body>
-        <h1>µù¥U­¶</h1>
+        <h1>è¨»å†Šé </h1>
         <form name='form' action='adddo.php' method="post">
-            ¯u¹ê©m¦W¡G<input type='text' name='username'><br />
-            ±K½X¡G<input type='password' name='password'><br />
-            ½T»{±K½X¡G<input type='password' name='password2'><br />
-            ¯u¹ê©m¦W¡G<input type='text' name='realname'><br />
-            «H½c¡G<input type='text' name='email'><br />
-            ¥Í¤é¡G<input type='date' name='birthdate'><br />
-            <input type="button" value="¶Ç°e" onClick="check()" />
+            çœŸå¯¦å§“åï¼š<input type='text' name='username'><br />
+            å¯†ç¢¼ï¼š<input type='password' name='password'><br />
+            ç¢ºèªå¯†ç¢¼ï¼š<input type='password' name='password2'><br />
+            çœŸå¯¦å§“åï¼š<input type='text' name='realname'><br />
+            ä¿¡ç®±ï¼š<input type='text' name='email'><br />
+            ç”Ÿæ—¥ï¼š<input type='date' name='birthdate'><br />
+            <input type="button" value="å‚³é€" onClick="check()" />
         </form>
     </body>
 </html>
